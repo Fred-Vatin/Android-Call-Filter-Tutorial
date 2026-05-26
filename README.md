@@ -35,10 +35,10 @@ Parfois, la motivation est purement financière ou liée à une vengeance lors d
 L'accumulation de ces fichiers volés permet aujourd'hui aux cybercriminels de croiser les bases de données. Un pirate peut utiliser votre numéro Free, votre numéro de sécurité sociale issu de France Travail et votre IBAN Bouygues pour monter une escroquerie parfaitement crédible.
 
 Les données compromises sont beaucoup plus précises et peuvent inclure tout ou partie de:
-- Identité (noms, prénoms, dates de naissance).
-- Coordonnées (adresses postales, emails, numéros de téléphone).
-- Informations contractuelles (offres souscrites) des organismes piratés et identifiant utilisé dans le contrat ou compte.
-- IBAN (relevés d'identité bancaire).
+- Identité (noms, prénoms, dates de naissance)
+- Coordonnées (adresses postales, emails, numéros de téléphone)
+- Informations contractuelles (offres souscrites) des organismes piratés et identifiant utilisé dans le contrat ou compte
+- IBAN (relevés d'identité bancaire)
 - Numéro de sécu
 - Nom de l’assureur santé et garanties du contrat
 - Historique et identifiant France Travail
@@ -57,7 +57,7 @@ Pour comprendre l’ampleur du problème et l’impunité dont bénéficient les
 
 ## Législation
 
-Une chance dans notre malheur qu’est l’impuissane de la justice française est que les numéros de démarchage sont encadrés par l’ARCEP. Ce type d’escrocs doit utiliser un certain schéma défini [ici](https://www.arcep.fr/la-regulation/grands-dossiers-thematiques-transverses/la-numerotation.html#c8961). Ils sont labellisés tels que : ***Numéros polyvalents vérifiés (pouvant être utilisés comme numéro d’appelant par des systèmes automatisés d’appels et d’envoi de messages)***. Ainsi, ils sont facilement identifiables puisque commençant toujours par certains numéros. Et cela va bien nous arranger pour tous les bloquer. De mon expérience, le blocage de ces seuls numéros élimine 99% des appels non sollicités.
+Une chance dans notre malheur qu’est l’impuissane de la justice française est que les numéros de démarchage sont encadrés par l’ARCEP. Ce type d’escrocs doit utiliser certains préfixes définis [ici](https://www.arcep.fr/la-regulation/grands-dossiers-thematiques-transverses/la-numerotation.html#c8961). Ils sont labellisés tels que : ***Numéros polyvalents vérifiés (pouvant être utilisés comme numéro d’appelant par des systèmes automatisés d’appels et d’envoi de messages)***. Ainsi, ils sont facilement identifiables puisque commençant toujours par certains numéros. Et cela va bien nous arranger pour tous les bloquer. De mon expérience, le blocage de ces seuls numéros élimine 99% des appels non sollicités.
 
 Pour bloquer d’autres types de spams, qui sont tous des arnaques criminelles, il faudra utiliser d’autres méthodes que nous verrons.
 
@@ -75,7 +75,7 @@ L’application se nomme SpamBlocker et j’ai contribué à créer les filtres 
 
 Avec votre téléphone, allez sur le repo github de l’application [ici](https://github.com/aj3423/SpamBlocker/releases/latest) ou scannez ce QRCode avec l’appareil photo de votre appareil ou l’application [Lens](https://play.google.com/store/apps/details?id=com.google.ar.lens):
 
-<img width="100" alt="image" src="https://github.com/user-attachments/assets/a29cd157-c83b-402b-b1eb-289e14bbf921" />
+<img width="80" alt="image" src="https://github.com/user-attachments/assets/a29cd157-c83b-402b-b1eb-289e14bbf921" />
 
 En bas de la page, dans la section **Assets**, cliquer sur `app-release.apk` pour le télécharger sur votre smartphone.
 
