@@ -1,6 +1,6 @@
 # <img src="https://play-lh.googleusercontent.com/rAgy3Oj1Iv_NAxTqlJTKpmwl9n862gyc-vcWda3ekS2_G8YtCm2D9csGwWgHFchsRu0" alt="" width="40"> &nbsp;&nbsp; **Filtrer les spams téléphoniques**
 
-Les appels de démarchages et d’escroquerie (ils se confondent) se sont multipliés. La cause est que vos données personnelles ont été volées et vendues aux escrocs en tout genre.
+Les appels de démarchages et d’escroquerie (ils se confondent) se sont multipliés. La cause est que vos données personnelles ont été volées et vendues aux escrocs en tout genre.[](url)
 
 [![BUY ME A COFFEE](https://img.shields.io/badge/BUY%20ME%20A%20COFFEE-ffffff?logo=buymeacoffee&style=for-the-badge&color=710067&logoColor=ffe071)](https://github.com/sponsors/Fred-Vatin)
 
@@ -138,7 +138,7 @@ J’explique ici le détail de la configuration pour ceux que ça intéresse et 
 
 ### Filtrage
 
-C’est la partie où on active ou désactive le filtrage global. Ici, on active le filtre des appels uniquement car filtrer les SMS ici est techniquement difficile et peut briser une fonctionnalité ou un comportement ([détails](https://github.com/aj3423/SpamBlocker#how-it-works)).
+C’est la partie où on active ou désactive le filtrage global. On active le filtre des appels uniquement car filtrer les SMS ici est techniquement difficile et peut briser une fonctionnalité ou un comportement ([détails](https://github.com/aj3423/SpamBlocker#how-it-works)).
 
 <img width="300" alt="config - Copy" src="https://github.com/user-attachments/assets/1d01ee1a-051a-437b-ae00-deb6bfe05add" />
 
