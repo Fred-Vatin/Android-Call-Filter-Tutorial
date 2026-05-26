@@ -2,6 +2,8 @@
 
 Les appels de démarchages et d’escroquerie (ils se confondent) se sont multipliés. La cause est que vos données personnelles ont été volées et vendues aux escrocs en tout genre.
 
+[![BUY ME A COFFEE](https://img.shields.io/badge/BUY%20ME%20A%20COFFEE-ffffff?logo=buymeacoffee&style=for-the-badge&color=710067&logoColor=ffe071)](https://github.com/sponsors/Fred-Vatin)
+
 <details>
 <summary><b>Sommaire</b></summary>
 
@@ -90,50 +92,81 @@ De même que votre PC utilise des `.exe` pour installer un logiciel, votre smart
 
 L’application se nomme [SpamBlocker](https://github.com/aj3423/SpamBlocker) et j’ai contribué à créer ou mettre à jour les filtres pour la France.
 
-Avec votre téléphone, allez sur le repo github de l’application [ici](https://github.com/aj3423/SpamBlocker/releases/latest) ou scannez ce QRCode avec l’appareil photo de votre smartphone ou l’application [Lens](https://play.google.com/store/apps/details?id=com.google.ar.lens):
+Pour la télécharger cliquez [ici](https://github.com/aj3423/SpamBlocker/releases/latest/download/app-release.apk) ou scannez ce QRCode avec l’appareil photo de votre smartphone ou l’application [Lens](https://play.google.com/store/apps/details?id=com.google.ar.lens):
 
-<img width="100" alt="image" src="https://github.com/user-attachments/assets/a29cd157-c83b-402b-b1eb-289e14bbf921" />
+<img width="100" alt="image" src="https://github.com/user-attachments/assets/1c3c5f16-d813-48be-ad30-724c5dabd336" />
 
-En bas de la page, dans la section **Assets**, cliquer sur `app-release.apk` pour le télécharger sur votre smartphone.
-
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/d462cf78-8d66-47f8-86ea-1fb56e4c2b84" />
-
-Vous allez aussi avoir besoin de mon fichier de configuration. Téléchargez-le dans la section release [ici](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/releases/latest) :
-
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/0307a2a4-79a9-4c65-ba9f-75410b5d9c1b" />
+Vous allez aussi avoir besoin de mon fichier de configuration. Téléchargez-le en cliquant [ici](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/releases/latest/download/SpamBlocker-settings.gz) :
 
 Dans votre smartphone, RDV dans vos fichiers téléchargés et cliquer sur `app-release.apk` pour l’installer. Une fois installé, lancez l’application **SpamBlocker**, ça ressemble à ça.
 
-<img width="400" alt="Screenshot_20260526-165806" src="https://github.com/user-attachments/assets/01149c3d-5d2f-407e-9b41-b1c85c85cb78" />
+<img width="150" alt="Screenshot_20260526-165806" src="https://github.com/user-attachments/assets/01149c3d-5d2f-407e-9b41-b1c85c85cb78" />
 
 Pour l’instant, rien de fou. C’est le journal d’appels et il est vide. De plus, l’application n’est pas active. Allez dans les settings.
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/a11f6c37-01b9-44bb-a8a9-04343c53909f" />
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/a11f6c37-01b9-44bb-a8a9-04343c53909f" />
 
 Tout en bas, cliquez sur **Import**.
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/8698ab6f-1cf9-41d4-baa1-2fade4862203" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/8698ab6f-1cf9-41d4-baa1-2fade4862203" />
 
-Et sélectionner le fichier `SpamBlocker-settings.gz ` téléchargé plus tôt.
+Et sélectionner le fichier `SpamBlocker-settings.gz ` téléchargé plus tôt. **À ce moment-là il peut vous être demandé d’autoriser certaines choses afin que l’app puisse fonctionner. Acceptez tout.**
 
 Désormais vos prochains appels seront filtrés silencieusement.
 
 Quand ce sera le cas, il y aura une notification pour vous indiquer qu’un appel a été bloqué. Elle indique le numéro bloqué et par quelle règle.
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/bbb09b54-283a-4800-a81b-c6b99614e04e" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/bbb09b54-283a-4800-a81b-c6b99614e04e" />
 
 Et pour voir le journal des appels, ouvrez l’app et cliquez sur l’icône en bas à gauche.
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/00e9310f-30fb-4dbd-a849-abcc1c9c14ce" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/00e9310f-30fb-4dbd-a849-abcc1c9c14ce" />
 
 Les numéros en rouge ont été bloqués. Les numéros en vert ont été autorisés (aucun sur la capture d’écran). On y voit le pays émetteur et le nom du filtre appliqué.
 
+Notez que cette configuration ne filtre que les appels et non les SMS. Lisez la suite si vous avez besoin d’activer le filtre SMS.
+
 ## Configuration
 
-J’explique ici le détail de la configuration pour ceux que ça intéresse mais vous n’avez pas besoin de lire si 
+J’explique ici le détail de la configuration pour ceux que ça intéresse et qui voudraient aller plus loin. Allez dans les **settings** de l’app pour voir les correspondances aux références suivantes.
 
+> [!TIP]
+> Chaque paramètre possède une aide intégrée en appuyant sur les ❔
 
+### Screening (activation)
 
+C’est la partie où on active ou désactive le filtrage global. Ici, on active le filtre des appels uniquement car filtrer les SMS ici est techniquement difficile et peut briser une fonctionnalité ou un comportement.
+<img width="200" alt="1 active" src="https://github.com/user-attachments/assets/79eccd74-0dd2-4bd1-8b80-c0d896e180db" />
 
+#### SMS
 
+Chaque marque de smartphone Android a tendance à préinstaller ses apps propriétaires pour les appels et les SMS. Si vous recevez des SMS frauduleux un peu trop souvent, la première chose que vous pouvez faire est d’installer l’application SMS officielle de Google via le playstore [ici](https://play.google.com/store/apps/details?id=com.google.android.apps.messaging).
 
+Une fois que vous l’avez définie comme app SMS par défaut, allez dans les paramètres pour vous assurer que le filtre antispam est actif.
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/27406a5d-b640-4141-8735-2e0f7b6e212c" /><img width="300" alt="image" src="https://github.com/user-attachments/assets/6223b015-eaae-4b95-9a2a-e3f3049f4b96" />
+
+Si vous recevez un SMS qui vous semble suspect, faites une capture d’écran et envoyez-la à Gemini en lui demandant s’il pense que ce SMS est suspect. Si oui, signalez-le comme spam.
+
+<img width="300" alt="google message" src="https://github.com/user-attachments/assets/34b0fc51-5f0f-4929-b6e5-14cf8b8fe164" />
+
+> [!TIP]
+> Apprenez à vous servir de Gemini sur votre smartphone. Il est un assistant fort utile pour répondre aux questions techniques.
+> Demandez-lui par exemple comment faire une capture d’écran sur votre smartphone en lui indiquant la marque et le modèle.
+
+Personnellement, ça fait longtemps que je n’ai pas reçu de SMS frauduleux en utilisant cette méthode. Google et les opérateurs ont progressé afin de filtrer ces messages en amont.
+
+### Quick settings
+
+<img width="300" alt="Quick" src="https://github.com/user-attachments/assets/05f6f6fc-b407-46b3-a982-ab0500994f32" />
+
+Voici la configuration :
+- Tous les numéros faisant partie de vos contacts seront toujours autorisés
+- STIR: permet de bloquer les appels qui usurpent des numéros valides (banques, contacts etc.). Le succès va dépendre de la modernité du réseau et de votre appareil.
+   - Par défaut, l’option `inclure 
+
+Vous ne devriez pas avoir besoin de toucher cette section.
+
+---
+
+[![BUY ME A COFFEE](https://img.shields.io/badge/BUY%20ME%20A%20COFFEE-ffffff?logo=buymeacoffee&style=for-the-badge&color=710067&logoColor=ffe071)](https://github.com/sponsors/Fred-Vatin)
