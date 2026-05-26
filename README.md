@@ -4,15 +4,15 @@ Les appels de démarchages et d’escroquerie (ils se confondent) se sont multip
 
 ## Les vols de données
 
-Généralement, les escrocs ont au moins votre numéro. C’est suffisant pour démarrer une arnaque. Mais des millions de données personnelles ont été dérobées ces dernières années. Soit par du hacking de serveurs ou phishing:
-- Bouygues en 2025 [hacking]
-- Free en 2024 [hacking]
-- Viamedis et Almerys en 2024 (pros de la Santé) [phishing]
-- France Travail [hacking]
+Généralement, les escrocs-démarcheurs ont au moins votre numéro. C’est suffisant pour démarrer une arnaque. Sauf qu’ils ont souvent bien plus que ça car des millions de données personnelles ont été dérobées ces dernières années. Des pirates ont pu hacker divers serveurs.
+- Bouygues en 2025
+- Free en 2024
+- Viamedis et Almerys en 2024 (pros de la Santé)
+- France Travail
 
-Soit via des menaces interne. C'est un phénomène redouté par les experts en cybersécurité, car aucune barrière informatique ou pare-feu ne peut bloquer un employé qui possède des accès légitimes au système et décide de trahir son entreprise.
+Outre les pirates, il y a aussi des menaces internes. C'est un phénomène redouté par les experts en cybersécurité, car aucune barrière informatique ou pare-feu ne peut bloquer un employé qui possède des accès légitimes au système et décide de trahir son entreprise et ses clients.
 
-En France et en Europe, plusieurs affaires marquantes ont illustré ce type de complicité ou de corruption. Mais énormément de fuites ont lieu chaque année en toute discretion dans les entreprises et les administrations qui pululent d’employés peu scrupuleux qui arrondissent leurs fins de mois en vendant des données ciblées à leurs connaissances criminelles. Même quand une entreprise finit par s’en rendre compte, il arrive que pour éviter la mauvaise presse, l’affaire reste confinée en interne.
+En France et en Europe, plusieurs affaires marquantes ont illustré ce type de complicité ou de corruption. Mais énormément de fuites ont lieu chaque année en toute discretion dans les entreprises et les administrations où pullulent les employés peu scrupuleux qui arrondissent leurs fins de mois en vendant des données ciblées à leurs connaissances criminelles.
 
 ### 1. La revente de "fadettes" et géolocalisations par des agents d'opérateurs
 C'est le cas le plus fréquent et le plus documenté. Des employés de niveau intermédiaire chez des opérateurs télécoms (Orange, SFR, Bouygues) sont régulièrement approchés par des criminels ou des détectives privés véreux.
@@ -57,11 +57,11 @@ Pour comprendre l’ampleur du problème et l’impunité dont bénéficient les
 
 ## Législation
 
-Une chance dans notre malheur qu’est l’impuissane de la justice française est que les numéros de démarchage sont encadrés par l’ARCEP. Ce type d’escrocs doit utiliser certains préfixes définis [ici](https://www.arcep.fr/la-regulation/grands-dossiers-thematiques-transverses/la-numerotation.html#c8961). Ils sont labellisés tels que : ***Numéros polyvalents vérifiés (pouvant être utilisés comme numéro d’appelant par des systèmes automatisés d’appels et d’envoi de messages)***. Ainsi, ils sont facilement identifiables puisque commençant toujours par certains numéros. Et cela va bien nous arranger pour tous les bloquer. De mon expérience, le blocage de ces seuls numéros élimine 99% des appels non sollicités.
+Une chance dans notre malheur qu’est l’impuissane et le laxisme de la justice française est que les numéros de démarchage sont encadrés par l’ARCEP. Ce type d’escrocs doit utiliser certains préfixes définis [ici](https://www.arcep.fr/la-regulation/grands-dossiers-thematiques-transverses/la-numerotation.html#c8961). Ils sont labellisés tels que : ***Numéros polyvalents vérifiés (pouvant être utilisés comme numéro d’appelant par des systèmes automatisés d’appels et d’envoi de messages)***. Ainsi, ces numéros sont facilement identifiables. Et cela va bien nous arranger pour tous les bloquer. De mon expérience, le blocage de ces seuls numéros élimine 99% des appels non sollicités.
 
 Pour bloquer d’autres types de spams, qui sont tous des arnaques criminelles, il faudra utiliser d’autres méthodes que nous verrons.
 
-## Solution
+## Solution de blocage automatisé
 
 Pour les smartphones Android, bien qu’il existe quelques apps dans le play store qui font en partie le job, j’utilise une solution gratuite, sans pub, open source et bien plus complète.
 
@@ -69,17 +69,50 @@ On va pouvoir filtrer des plages de numéros, interroger automatiquement des ann
 
 ### Installation
 
-De même que votre PC utilise des `.exe` pour installer un logiciel, votre smartphone peut utiliser des `.apk` pour installer des apps. Et ceci est relativement facile même pour l’utilisateur lambda. Malheureusement, progressivement à partir de la rentrée 2026, Google (propriétaire et fabriquant du système) va considérablement compliquer la procédure. Du moins pour Android 16 et supérieur. Je mettrai à jour le tutoriel à ce moment-là.
+De même que votre PC utilise des `.exe` pour installer un logiciel, votre smartphone utilise des `.apk` pour installer des apps. Et ceci est relativement facile même pour l’utilisateur lambda. Malheureusement, progressivement à partir de la rentrée 2026, Google (propriétaire et fabriquant du système) va considérablement compliquer la procédure. Du moins pour Android 16 et supérieur. Je mettrai à jour le tutoriel à ce moment-là.
 
-L’application se nomme SpamBlocker et j’ai contribué à créer les filtres pour la France.
+L’application se nomme [SpamBlocker](https://github.com/aj3423/SpamBlocker) et j’ai contribué à créer ou mettre à jour les filtres pour la France.
 
-Avec votre téléphone, allez sur le repo github de l’application [ici](https://github.com/aj3423/SpamBlocker/releases/latest) ou scannez ce QRCode avec l’appareil photo de votre appareil ou l’application [Lens](https://play.google.com/store/apps/details?id=com.google.ar.lens):
+Avec votre téléphone, allez sur le repo github de l’application [ici](https://github.com/aj3423/SpamBlocker/releases/latest) ou scannez ce QRCode avec l’appareil photo de votre smartphone ou l’application [Lens](https://play.google.com/store/apps/details?id=com.google.ar.lens):
 
-<img width="80" alt="image" src="https://github.com/user-attachments/assets/a29cd157-c83b-402b-b1eb-289e14bbf921" />
+<img width="100" alt="image" src="https://github.com/user-attachments/assets/a29cd157-c83b-402b-b1eb-289e14bbf921" />
 
 En bas de la page, dans la section **Assets**, cliquer sur `app-release.apk` pour le télécharger sur votre smartphone.
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/d462cf78-8d66-47f8-86ea-1fb56e4c2b84" />
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/d462cf78-8d66-47f8-86ea-1fb56e4c2b84" />
 
-Dans votre smartphone, RDV dans vos fichiers téléchargés et cliquer sur `app-release.apk` pour l’installer. Une fois installé et lancé, ça ressemble à ça.
+Vous allez aussi avoir besoin de mon fichier de configuration. Téléchargez-le dans la section release [ici](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/releases/latest) :
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/0307a2a4-79a9-4c65-ba9f-75410b5d9c1b" />
+
+Dans votre smartphone, RDV dans vos fichiers téléchargés et cliquer sur `app-release.apk` pour l’installer. Une fois installé, lancez l’application **SpamBlocker**, ça ressemble à ça.
+
+<img width="800" alt="Screenshot_20260526-165806" src="https://github.com/user-attachments/assets/01149c3d-5d2f-407e-9b41-b1c85c85cb78" />
+
+Pour l’instant, rien de fou. C’est le journal d’appels et il est vide. De plus, l’application n’est pas active. Allez dans les settings.
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/a11f6c37-01b9-44bb-a8a9-04343c53909f" />
+
+Tout en bas, cliquez sur **Import**.
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/8698ab6f-1cf9-41d4-baa1-2fade4862203" />
+
+Et sélectionner le fichier `SpamBlocker-settings.gz ` téléchargé plus tôt.
+
+Désormais vos prochains appels seront filtrés silencieusement.
+
+Quand ce sera le cas, il y aura une notification pour vous indiquer qu’un appel a été bloqué. Elle indique le numéro bloqué et par quelle règle.
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/bbb09b54-283a-4800-a81b-c6b99614e04e" />
+
+
+
+## Configuration
+
+J’explique ici le détail de la configuration pour ceux que ça intéresse mais vous n’avez pas besoin de lire si 
+
+
+
+
+
 
