@@ -2,6 +2,23 @@
 
 Les appels de démarchages et d’escroquerie (ils se confondent) se sont multipliés. La cause est que vos données personnelles ont été volées et vendues aux escrocs en tout genre.
 
+<details>
+<summary><b>Sommaire</b></summary>
+
+1. [Les vols de données](#les-vols-de-donn%C3%A9es)
+   1. [La revente de "fadettes" et géolocalisations par des agents d'opérateurs](#1-la-revente-de-fadettes-et-g%C3%A9olocalisations-par-des-agents-dop%C3%A9rateurs)
+   2. [La fraude à la carte SIM ("SIM Swapping") avec complicité interne](#2-la-fraude-%C3%A0-la-carte-sim-sim-swapping-avec-complicit%C3%A9-interne)
+   3. [Les vols de fichiers pour concurrence ou revente directe](#3-les-vols-de-fichiers-pour-concurrence-ou-revente-directe)
+3. [Documentaires](#documentaires)
+4. [Législation](#l%C3%A9gislation)
+5. [Solution de blocage automatisé](#solution-de-blocage-automatis%C3%A9)
+   1. [Installation](#installation)
+6. [Configuration](#configuration)
+
+</details>
+
+---
+
 ## Les vols de données
 
 Généralement, les escrocs-démarcheurs ont au moins votre numéro. C’est suffisant pour démarrer une arnaque. Sauf qu’ils ont souvent bien plus que ça car des millions de données personnelles ont été dérobées ces dernières années. Des pirates ont pu hacker divers serveurs.
@@ -79,23 +96,23 @@ Avec votre téléphone, allez sur le repo github de l’application [ici](https:
 
 En bas de la page, dans la section **Assets**, cliquer sur `app-release.apk` pour le télécharger sur votre smartphone.
 
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/d462cf78-8d66-47f8-86ea-1fb56e4c2b84" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/d462cf78-8d66-47f8-86ea-1fb56e4c2b84" />
 
 Vous allez aussi avoir besoin de mon fichier de configuration. Téléchargez-le dans la section release [ici](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/releases/latest) :
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/0307a2a4-79a9-4c65-ba9f-75410b5d9c1b" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/0307a2a4-79a9-4c65-ba9f-75410b5d9c1b" />
 
 Dans votre smartphone, RDV dans vos fichiers téléchargés et cliquer sur `app-release.apk` pour l’installer. Une fois installé, lancez l’application **SpamBlocker**, ça ressemble à ça.
 
-<img width="800" alt="Screenshot_20260526-165806" src="https://github.com/user-attachments/assets/01149c3d-5d2f-407e-9b41-b1c85c85cb78" />
+<img width="400" alt="Screenshot_20260526-165806" src="https://github.com/user-attachments/assets/01149c3d-5d2f-407e-9b41-b1c85c85cb78" />
 
 Pour l’instant, rien de fou. C’est le journal d’appels et il est vide. De plus, l’application n’est pas active. Allez dans les settings.
 
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/a11f6c37-01b9-44bb-a8a9-04343c53909f" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/a11f6c37-01b9-44bb-a8a9-04343c53909f" />
 
 Tout en bas, cliquez sur **Import**.
 
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/8698ab6f-1cf9-41d4-baa1-2fade4862203" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/8698ab6f-1cf9-41d4-baa1-2fade4862203" />
 
 Et sélectionner le fichier `SpamBlocker-settings.gz ` téléchargé plus tôt.
 
@@ -103,9 +120,13 @@ Désormais vos prochains appels seront filtrés silencieusement.
 
 Quand ce sera le cas, il y aura une notification pour vous indiquer qu’un appel a été bloqué. Elle indique le numéro bloqué et par quelle règle.
 
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/bbb09b54-283a-4800-a81b-c6b99614e04e" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/bbb09b54-283a-4800-a81b-c6b99614e04e" />
 
+Et pour voir le journal des appels, ouvrez l’app et cliquez sur l’icône en bas à gauche.
 
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/00e9310f-30fb-4dbd-a849-abcc1c9c14ce" />
+
+Les numéros en rouge ont été bloqués. Les numéros en vert ont été autorisés (aucun sur la capture d’écran). On y voit le pays émetteur et le nom du filtre appliqué.
 
 ## Configuration
 
