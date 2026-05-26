@@ -152,7 +152,8 @@ Une fois que vous l’avez définie comme app SMS par défaut, allez dans les pa
 
 Si vous recevez un SMS qui vous semble suspect, faites une capture d’écran et envoyez-la à Gemini en lui demandant s’il pense que ce SMS est suspect. Si oui, signalez-le comme spam.
 
-<img width="300" alt="google message" src="https://github.com/user-attachments/assets/34b0fc51-5f0f-4929-b6e5-14cf8b8fe164" />
+<img width="200" alt="%pn 2026-05-27 00h41 1080×2400 #4613" src="https://github.com/user-attachments/assets/dbd80893-4c92-407c-89cb-5d45a2458fc4" />
+
 
 > [!TIP]
 > Apprenez à vous servir de Gemini sur votre smartphone. Il est un assistant fort utile pour répondre aux questions techniques.
