@@ -101,7 +101,7 @@ Pour la télécharger cliquez [ici](https://github.com/aj3423/SpamBlocker/releas
 
 Vous allez aussi avoir besoin de mon fichier de configuration. Téléchargez-le en cliquant [ici](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/releases/latest/download/SpamBlocker-settings.gz) :
 
-Dans votre smartphone, RDV dans vos fichiers téléchargés et cliquer sur `app-release.apk` pour l’installer. Une fois installé, lancez l’application **SpamBlocker**, ça ressemble à ça.
+Dans votre smartphone, RDV dans vos fichiers téléchargés et cliquer sur `app-release.apk` pour l’installer. Une fois installé, lancez l’application **SpamBlocker**. Ça ressemble à ça.
 
 <img width="150" alt="Screenshot_20260526-232549 - Copy" src="https://github.com/user-attachments/assets/8683d845-9471-4381-84f6-9de80e438398" />
 
@@ -131,7 +131,7 @@ Notez que cette configuration ne filtre que les appels et non les SMS. Lisez la 
 
 ## Configuration
 
-J’explique ici le détail de la configuration pour ceux que ça intéresse et qui voudraient aller plus loin. Allez dans les **settings** de l’app pour voir les correspondances aux références suivantes.
+J’explique ici le détail de la configuration pour ceux que ça intéresse et qui voudraient aller plus loin. Allez dans les **paramètres** de l’app pour voir les correspondances aux références suivantes.
 
 > [!TIP]
 > Chaque paramètre possède une aide intégrée en appuyant sur les ❔
