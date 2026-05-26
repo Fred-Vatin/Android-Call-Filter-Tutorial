@@ -19,6 +19,9 @@ Les appels de démarchages et d’escroquerie (ils se confondent) se sont multip
 
 </details>
 
+> [!TIP]
+> Pour toutes questions ou suggestions, RDV dans la section [Discussions](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/discussions)
+
 ---
 
 ## Les vols de données
@@ -100,15 +103,15 @@ Vous allez aussi avoir besoin de mon fichier de configuration. Téléchargez-le 
 
 Dans votre smartphone, RDV dans vos fichiers téléchargés et cliquer sur `app-release.apk` pour l’installer. Une fois installé, lancez l’application **SpamBlocker**, ça ressemble à ça.
 
-<img width="150" alt="Screenshot_20260526-165806" src="https://github.com/user-attachments/assets/01149c3d-5d2f-407e-9b41-b1c85c85cb78" />
+<img width="150" alt="Screenshot_20260526-232549 - Copy" src="https://github.com/user-attachments/assets/8683d845-9471-4381-84f6-9de80e438398" />
 
-Pour l’instant, rien de fou. C’est le journal d’appels et il est vide. De plus, l’application n’est pas active. Allez dans les settings.
+Pour l’instant, rien de fou. C’est le journal d’appels et il est vide. De plus, l’application n’est pas active. Allez dans les **paramètres**.
 
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/a11f6c37-01b9-44bb-a8a9-04343c53909f" />
+<img width="150" alt="image" src="https://github.com/user-attachments/assets/39eb8a6c-7b4b-4dc0-aab5-75426fce58ef" />
 
-Tout en bas, cliquez sur **Import**.
+Tout en bas, cliquez sur **Importer**.
 
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/8698ab6f-1cf9-41d4-baa1-2fade4862203" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/41a24bcd-084b-4de5-aef4-d32231ad2536" />
 
 Et sélectionner le fichier `SpamBlocker-settings.gz ` téléchargé plus tôt. **À ce moment-là il peut vous être demandé d’autoriser certaines choses afin que l’app puisse fonctionner. Acceptez tout.**
 
@@ -120,7 +123,7 @@ Quand ce sera le cas, il y aura une notification pour vous indiquer qu’un appe
 
 Et pour voir le journal des appels, ouvrez l’app et cliquez sur l’icône en bas à gauche.
 
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/00e9310f-30fb-4dbd-a849-abcc1c9c14ce" />
+<img width="300" alt="Screenshot_20260526-232549" src="https://github.com/user-attachments/assets/84865206-6951-4f5b-aee2-98ad8a20601f" />
 
 Les numéros en rouge ont été bloqués. Les numéros en vert ont été autorisés (aucun sur la capture d’écran). On y voit le pays émetteur et le nom du filtre appliqué.
 
@@ -133,10 +136,11 @@ J’explique ici le détail de la configuration pour ceux que ça intéresse et 
 > [!TIP]
 > Chaque paramètre possède une aide intégrée en appuyant sur les ❔
 
-### Screening (activation)
+### Filtrage
 
-C’est la partie où on active ou désactive le filtrage global. Ici, on active le filtre des appels uniquement car filtrer les SMS ici est techniquement difficile et peut briser une fonctionnalité ou un comportement.
-<img width="200" alt="1 active" src="https://github.com/user-attachments/assets/79eccd74-0dd2-4bd1-8b80-c0d896e180db" />
+C’est la partie où on active ou désactive le filtrage global. Ici, on active le filtre des appels uniquement car filtrer les SMS ici est techniquement difficile et peut briser une fonctionnalité ou un comportement ([détails](https://github.com/aj3423/SpamBlocker#how-it-works)).
+
+<img width="300" alt="config - Copy" src="https://github.com/user-attachments/assets/1d01ee1a-051a-437b-ae00-deb6bfe05add" />
 
 #### SMS
 
@@ -156,16 +160,16 @@ Si vous recevez un SMS qui vous semble suspect, faites une capture d’écran et
 
 Personnellement, ça fait longtemps que je n’ai pas reçu de SMS frauduleux en utilisant cette méthode. Google et les opérateurs ont progressé afin de filtrer ces messages en amont.
 
-### Quick settings
+### Paramètres rapides
 
-<img width="300" alt="Quick" src="https://github.com/user-attachments/assets/05f6f6fc-b407-46b3-a982-ab0500994f32" />
+*Vous ne devriez pas avoir besoin de toucher cette section.*
+
+<img width="300" alt="config - Copy" src="https://github.com/user-attachments/assets/39150528-b101-4888-a730-dd42079b99b0" />
 
 Voici la configuration :
 - Tous les numéros faisant partie de vos contacts seront toujours autorisés
-- STIR: permet de bloquer les appels qui usurpent des numéros valides (banques, contacts etc.). Le succès va dépendre de la modernité du réseau et de votre appareil.
-   - Par défaut, l’option `inclure 
-
-Vous ne devriez pas avoir besoin de toucher cette section.
+- STIR: permet de bloquer les appels qui usurpent des numéros valides (banques, contacts, etc.). Le succès va dépendre de la modernité du réseau et de votre appareil. En France, les opérateurs sont censés de toute façon bloquer en amont les numéros dont le certificat est invalide mais des limitations techniques existent encore. ([détails](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/wiki/STIR-SHAKEN-en-France-:-Obligation-et-Limites))
+   - Par défaut, l’option `inclure non vérifié` est désactivée. À l’heure actuelle, l’activer pourrait bloquer des appels fiables bien qu’il soit probable que les opérateurs bloquent d’eux-mêmes les numéros français qui ne parviennent pas à s’authentifier. Pour les numéros étranger c’est une autre histoire mais vous n’avez de toute façon aucune raison de faire confiance à un numéro hors France.
 
 ---
 
