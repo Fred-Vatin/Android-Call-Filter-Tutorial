@@ -11,6 +11,7 @@ Les appels de démarchages et d’escroquerie (ils se confondent) se sont multip
    1. [La revente de "fadettes" et géolocalisations par des agents d'opérateurs](#1-la-revente-de-fadettes-et-g%C3%A9olocalisations-par-des-agents-dop%C3%A9rateurs)
    2. [La fraude à la carte SIM ("SIM Swapping") avec complicité interne](#2-la-fraude-%C3%A0-la-carte-sim-sim-swapping-avec-complicit%C3%A9-interne)
    3. [Les vols de fichiers pour concurrence ou revente directe](#3-les-vols-de-fichiers-pour-concurrence-ou-revente-directe)
+2. [Que faire en cas d'appel d'un faux conseiller ?](#que-faire-en-cas-dappel-dun-faux-conseiller-)
 3. [Documentaires](#documentaires)
 4. [Législation](#l%C3%A9gislation)
 5. [Solution de blocage automatisé](#solution-de-blocage-automatis%C3%A9)
@@ -81,6 +82,10 @@ Les données compromises sont beaucoup plus précises et peuvent inclure tout ou
 
 Partez toujours du principe que toutes ces données sont dans la nature et que les criminels les possèdent.
 
+## Que faire en cas d'appel d'un faux conseiller ?
+
+Lisez [cet article](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/wiki/Que-faire-en-cas-d'appel-d'un-faux-conseiller-%3F) détaillé.
+
 ## Documentaires
 
 Pour comprendre l’ampleur du problème et l’impunité dont bénéficient les escrocs, regardez:
@@ -113,7 +118,9 @@ Pour la télécharger cliquez [ici](https://github.com/aj3423/SpamBlocker/releas
 
 <img width="100" alt="image" src="https://github.com/user-attachments/assets/1c3c5f16-d813-48be-ad30-724c5dabd336" />
 
-Vous allez aussi avoir besoin de mon fichier de configuration. Téléchargez-le en cliquant [ici](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/releases/latest/download/SpamBlocker-settings.gz) :
+Vous allez aussi avoir besoin de mon fichier de configuration. Téléchargez-le en cliquant [ici](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/releases/latest/download/SpamBlocker-settings.gz) ou scannez ce QRCode:
+
+<img width="100" alt="image" src="https://github.com/user-attachments/assets/69d864fa-0d42-44e2-8d7c-1dee7a0a1f52" />
 
 Dans votre smartphone, RDV dans vos fichiers téléchargés et cliquer sur `app-release.apk` pour l’installer. Une fois installé, lancez l’application **SpamBlocker**. Ça ressemble à ça.
 
@@ -184,16 +191,16 @@ Personnellement, ça fait longtemps que je n’ai pas reçu de SMS frauduleux en
 <img width="300" alt="Screenshot_20260528-042040" src="https://github.com/user-attachments/assets/b1d62e37-cec8-42f1-b6b3-da7ed376ab03" />
 
 Voici la configuration :
-- **Contacts**: Tous les numéros faisant partie de vos contacts seront toujours autorisés
+- **Contacts**: Tous les numéros faisant partie de vos contacts seront toujours autorisés. Il n’y a pas d’exception sauf à créer une [règle de blocage](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros) pour un numéro qui aurait une priorité plus élevée que 12.
 - **STIR**: permet de bloquer les appels qui usurpent des numéros valides (banques, contacts, etc.). Le succès va dépendre de la modernité du réseau et de votre appareil. En France, les opérateurs sont censés de toute façon bloquer en amont les numéros dont le certificat est invalide mais des limitations techniques existent encore. ([détails](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/wiki/STIR-SHAKEN-en-France-:-Obligation-et-Limites))
    - Par défaut, l’option `inclure non vérifié` est désactivée. À l’heure actuelle, l’activer pourrait bloquer des appels fiables bien qu’il soit probable que les opérateurs bloquent d’eux-mêmes les numéros français qui ne parviennent pas à s’authentifier. Pour les numéros étranger c’est une autre histoire mais vous n’avez de toute façon aucune raison de faire confiance à un numéro hors France.
-- **Base de données**: Quand un numéro est bloqué manuellement ou correspond un numéro de spam selon un annuaire anti-spam, il est ajouté à cette base de données. Les futures appels dont le numéro a passé les filtres ci-dessus mais appartient à cette base de données seront bloqués.
-- **Appel répété**: Si un numéro a été précédemment bloqué par une autre règle que **règles de numéros**, il sera autorisé une fois s’il rappelle dans les 3 minutes. Part du principe que ce pourrait être un appel important.
-- **Numéro composé**: Les numéros que vous avez composés les 7 derniers jours ne seront pas bloqués sauf s’ils appartienennt à **règles de numéros**.
-- **Numéro répondu**: Cette règle identique à la précédente mais pour les appels décrochés et dont la durée est supérieure à 15 sec. est désactivée. **Il n’y a aucune bonne raison de l’activer.**
-- **Heure d’arrêt**: Permet d’autoriser tous les appels reçus dans une certaine plage horaire. **Laissez désactivé**. Si activé, **règles de numéros** reste prioritaire pour continuer de bloquer les numéros correspondants.
-- **Urgence**: Après avoir composé un numéro d’urgence, tous les appels entrants sont autorisés pendant 2 heures. J’ai demandé au developpeur de pouvoir affiner cette règle afin que les **règles de numéros** s’appliquent même dans ce cas. Surveillez ce repo pour être tenu au courant et disposer de la mise à jour quand elle sera disponible.
-- **Applications récentes**: Désactivé. Permet d’autoriser tous les appels sauf si correspondent à **règles de numéros**, si une application spécifiée a été ouverte dans les 5 dernières minutes. Si vous l’activer, ça pourrait contribuer à utiliser un peu plus de batterie.
+- **Base de données**: Quand un numéro est bloqué manuellement ou est signalé par dans un [annuaire anti-spam](#requ%C3%AAtes-instantan%C3%A9es), il est ajouté à cette base de données. Les futures appels dont le numéro a passé les filtres ci-dessus mais appartient à cette base de données seront bloqués.
+- **Appel répété**: Si un numéro a été précédemment bloqué par une autre règle que [règle de numéros](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros), il sera autorisé une fois s’il rappelle dans les 3 minutes. Part du principe que ce pourrait être un appel important. C’est un scénario très improbable.
+- **Numéro composé**: Les numéros que vous avez composés les 7 derniers jours ne seront pas bloqués sauf s’ils appartienennt à [règle de numéros](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros).
+- **Numéro répondu**: Règle identique à la précédente mais pour les appels décrochés et dont la durée est supérieure à 15 sec. Désactivée. **Il n’y a aucune bonne raison de l’activer.**
+- **Heure d’arrêt**: Permet d’autoriser tous les appels reçus dans une certaine plage horaire. **Laissez désactivé**. Si activé, [règle de numéros](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros) reste prioritaire pour continuer de bloquer les numéros de démarchage.
+- **Urgence**: Après avoir composé un numéro d’urgence, tous les appels entrants sont autorisés pendant 2 heures. *Dans la prochaine version de l’app on pourra affiner cette règle afin que les [règle de numéros](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros) s’appliquent même dans ce cas. Surveillez ce repo pour être tenu au courant et disposer de la mise à jour quand elle sera disponible.*
+- **Applications récentes**: Désactivé. Permet d’autoriser tous les appels sauf si correspondent à [règle de numéros](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros), si une application spécifiée a été ouverte dans les 5 dernières minutes. Si vous l’activer, ça pourrait contribuer à utiliser un peu plus de batterie.
 - **Mode réunion**: Les applications que vous sélectionneriez ici servent de bloqueur absolu. C’est à dire que lorsqu’elles sont en avant plan (ou en cours d’utilisation pour de la communication), tous les appels sont bloqués. Android propose déjà les **modes** qui font sensiblement la même chose sauf le déclenchement automatique d’un mode selon le contexte.
 - **Type de blocage**: `Rejeter` est identique à appuyer sur le bouton *raccrocher* pendant que ça sonne et permet aux appels bloqués de tout de même atteindre le répondeur et de laisser un message. Ça me semble être un paramètre sain au cas où un appel rejeté serait légitime. Je recommande néanmoins fortement d’avoir une annonce de répondeur qui dévoile peu de détails personnels (le prénom au max) sinon aucun. L’idéal serait même qu’aucune IA puisse entendre votre annonce avec votre voix plus de 5 sec. Sinon passer le paramètre à `raccrocher` permet de répondre et raccrocher dans la seconde pour éviter l’atteinte du répondeur. D’expérience, bien qu’ils soient de toute façon bloqués, il me semble que je reçois moins d’appels de démarchage depuis qu’ils sont `rejetés`. J’imagine que le fait que leurs appels soient systèmatiquement rejetés avant même la première tonalité me met sur une liste noire.
 - **Notification**: Comment est affichée la notification de blocage. Laissez à `faible` pour des blocages silencieux. Sinon, ajustez pour tout de même entendre un son de notification lors du blocage.
@@ -220,8 +227,7 @@ Les autres paramètres de cette section concernent des options avancées pour le
 
 <img width="300" alt="Screenshot_20260528-050352" src="https://github.com/user-attachments/assets/12ff1ef9-eb0c-4b37-a9cf-fc3ae1d10bb5" />
 
-
-C’est ici que sont définis les annuaires de spams. Quand un numéro a passé tous les filtres précédents, il est envoyé à ces annuaires. Dès qu’un annuaire retourne que ce numéro a été signalé comme spams par d’autres utilisateurs, il est ajouté à la base de données et bloqué.
+C’est ici que sont définis les annuaires de spams. Quand un numéro a passé tous les filtres précédents, il est envoyé à ces annuaires pour vérification. Dès qu’un annuaire retourne que ce numéro a été signalé comme spams par d’autres utilisateurs, il est ajouté à la base de données et bloqué.
 
 Les annuaires interrogés sont:
 - [CallFilter](https://callfilter.app/)
@@ -244,7 +250,6 @@ Si vous avez réussi à appliquer ce tutoriel, faites-en profiter les autres au 
 
 
 Et n’oubliez pas que pour toutes questions ou suggestions, RDV dans la section [Discussions](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/discussions)
-
 
 ---
 
