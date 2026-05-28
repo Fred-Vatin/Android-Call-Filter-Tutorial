@@ -209,6 +209,8 @@ Voici la configuration :
 Pour toutes les plages de numéros bloqués, j’ai défini une priorité de 11. La seule priorité plus élevée dans la config est 12 qui est utilisée pour toujours laisser passer les **contacts**. Cela signifie que les plages de numéros définis ici seront toujours bloquées.
 
 - **Maghreb**, **Asie du Sud**, **Afrique de l’Ouest**: À moins que vous ayez besoin d’être régulièrement en contact téléphonique avec ces pays, il n’y a aucune raison d’autoriser les appels de ces régions. [Pourquoi ?](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/wiki/Pourquoi-bloquer-certains-pays%E2%80%AF%3F)
+   - Pour ne plus bloquer un pays, vous pouvez éditer la règle afin d’effacer son indicatif. Collez la règle dans Gemini et demandez-lui comment faire si vous n’êtes pas sûr.
+   - Pour ne plus bloquer une région, supprimez la règle ou éditez en mettant la priorité à 0 **ET** en mettant le type à `autoriser`.
 - **Démarchage**: Blocage de tous les numéros utilisant les préfixes précis pour le démarchage réservés par l’Arcep.
 - **OnOff**: C’est une application utilisée pour créer des numéros virtuels. Elle est rarement utilisée de façon bienveillante. On bloque donc tous les préfixes utilisés par cette application.
 
