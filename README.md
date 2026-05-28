@@ -27,8 +27,13 @@ Les appels de démarchages et d’escroquerie (ils se confondent) se sont multip
 
 </details>
 
+---
+
 > [!TIP]
 > Pour toutes questions ou suggestions, RDV dans la section [Discussions](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/discussions)
+
+> [!TIP]
+> L’idéal pour suivre ce tutoriel confortablement et de le lire sur tablette ou PC.
 
 > [!TIP]
 > Pour être tenu informé des mises à jour, vous devez avoir un compte GitHub puis faire ceci en haut à gauche (sur PC):
