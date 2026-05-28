@@ -28,6 +28,13 @@ Les appels de démarchages et d’escroquerie (ils se confondent) se sont multip
 > [!TIP]
 > Pour toutes questions ou suggestions, RDV dans la section [Discussions](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/discussions)
 
+> [!TIP]
+> Pour être tenu informé des mises à jour, vous devez avoir un compte GitHub puis faire ceci en haut à gauche (sur PC):
+> <img width="300" alt="image" src="https://github.com/user-attachments/assets/b67eed0c-7a75-4926-901c-e74f0da2fd3a" />
+>
+> <img width="300" alt="image" src="https://github.com/user-attachments/assets/40a2cf2d-7fd3-4da6-8a1b-172130d98a3d" />
+> <img width="300" alt="image" src="https://github.com/user-attachments/assets/cc916180-5917-4706-8fdb-5f48bccd1e16" />
+
 ---
 
 ## Les vols de données
