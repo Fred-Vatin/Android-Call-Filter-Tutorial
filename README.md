@@ -40,7 +40,7 @@ Les appels de démarchages et d’escroquerie (ils se confondent) se sont multip
 
 ## Les vols de données
 
-Généralement, les escrocs-démarcheurs ont au moins votre numéro. C’est suffisant pour démarrer une arnaque. Sauf qu’ils ont souvent bien plus que ça car des millions de données personnelles ont été dérobées ces dernières années. Des pirates ont pu hacker divers serveurs.
+Généralement, les escrocs-démarcheurs ont au moins votre numéro. C’est suffisant pour démarrer une arnaque. Sauf qu’ils ont souvent bien plus que ça car des millions de données personnelles ont été dérobées ces dernières années. Des pirates ont pu hacker divers serveurs. Les attaques qui sont publiquement connues:
 - Bouygues en 2025
 - Free en 2024
 - Viamedis et Almerys en 2024 (pros de la Santé)
