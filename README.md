@@ -22,6 +22,7 @@ Les appels de démarchages et d’escroquerie (ils se confondent) se sont multip
    3. [Paramètres de l’expression régulière (règles de numéros)](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros)
    4. [Requête instantanées (annuaires de spams)](#requ%C3%AAtes-instantan%C3%A9es)
    5. [Autres options et sauvegardes](#autres-options-et-sauvegardes)
+7. [Partagez](#partagez)
 
 </details>
 
@@ -233,9 +234,11 @@ Les autres options ne sont pas utilisées. La seule section intéressante sera c
 
 ---
 
+## Partagez
+
 Si vous avez réussi à appliquer ce tutoriel, faites-en profiter les autres au maximum. Installez cet anti-spam chez vos proches. Si vous avez des méthodes pour **iPhone**, je vous suggère de créer un tutoriel en vous basant sur celui-ci. Ensuite, écrivez un message dans l’espace de discution pour partagez le lien que j’indiquerai ici.
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/24006c39-2fae-464f-9cda-2dd5d8b17d3d" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/24006c39-2fae-464f-9cda-2dd5d8b17d3d" />
 
 
 Et n’oubliez pas que pour toutes questions ou suggestions, RDV dans la section [Discussions](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/discussions)
