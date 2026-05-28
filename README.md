@@ -154,23 +154,70 @@ Si vous recevez un SMS qui vous semble suspect, faites une capture d’écran et
 
 <img width="200" alt="%pn 2026-05-27 00h41 1080×2400 #4613" src="https://github.com/user-attachments/assets/dbd80893-4c92-407c-89cb-5d45a2458fc4" />
 
+Votre application téléphonique permet peut-être également de filtrer les appels spams. Rarement très efficace pour le démarchage mais activez tout de même cette option si disponible. [Phone by Google](https://play.google.com/store/apps/details?id=com.google.android.dialer) le permet.
+
 
 > [!TIP]
-> Apprenez à vous servir de Gemini sur votre smartphone. Il est un assistant fort utile pour répondre aux questions techniques.
+> Apprenez à vous servir de **Gemini** sur votre smartphone. Il est un assistant fort utile pour répondre aux questions techniques.
 > Demandez-lui par exemple comment faire une capture d’écran sur votre smartphone en lui indiquant la marque et le modèle.
 
 Personnellement, ça fait longtemps que je n’ai pas reçu de SMS frauduleux en utilisant cette méthode. Google et les opérateurs ont progressé afin de filtrer ces messages en amont.
 
 ### Paramètres rapides
 
-*Vous ne devriez pas avoir besoin de toucher cette section.*
+*Certaines options pourraient valoir le coup d’être personnalisées mais ni moi ni d’autres ont eu de problèmes avec cette configuration.*
 
-<img width="300" alt="config - Copy" src="https://github.com/user-attachments/assets/39150528-b101-4888-a730-dd42079b99b0" />
+<img width="300" alt="Screenshot_20260528-042040" src="https://github.com/user-attachments/assets/b1d62e37-cec8-42f1-b6b3-da7ed376ab03" />
 
 Voici la configuration :
-- Tous les numéros faisant partie de vos contacts seront toujours autorisés
-- STIR: permet de bloquer les appels qui usurpent des numéros valides (banques, contacts, etc.). Le succès va dépendre de la modernité du réseau et de votre appareil. En France, les opérateurs sont censés de toute façon bloquer en amont les numéros dont le certificat est invalide mais des limitations techniques existent encore. ([détails](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/wiki/STIR-SHAKEN-en-France-:-Obligation-et-Limites))
+- **Contacts**: Tous les numéros faisant partie de vos contacts seront toujours autorisés
+- **STIR**: permet de bloquer les appels qui usurpent des numéros valides (banques, contacts, etc.). Le succès va dépendre de la modernité du réseau et de votre appareil. En France, les opérateurs sont censés de toute façon bloquer en amont les numéros dont le certificat est invalide mais des limitations techniques existent encore. ([détails](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/wiki/STIR-SHAKEN-en-France-:-Obligation-et-Limites))
    - Par défaut, l’option `inclure non vérifié` est désactivée. À l’heure actuelle, l’activer pourrait bloquer des appels fiables bien qu’il soit probable que les opérateurs bloquent d’eux-mêmes les numéros français qui ne parviennent pas à s’authentifier. Pour les numéros étranger c’est une autre histoire mais vous n’avez de toute façon aucune raison de faire confiance à un numéro hors France.
+- **Base de données**: Quand un numéro est bloqué manuellement ou correspond un numéro de spam selon un annuaire anti-spam, il est ajouté à cette base de données. Les futures appels dont le numéro a passé les filtres ci-dessus mais appartient à cette base de données seront bloqués.
+- **Appel répété**: Si un numéro a été précédemment bloqué par une autre règle que **règles de numéros**, il sera autorisé une fois s’il rappelle dans les 3 minutes. Part du principe que ce pourrait être un appel important.
+- **Numéro composé**: Les numéros que vous avez composés les 7 derniers jours ne seront pas bloqués sauf s’ils appartienennt à **règles de numéros**.
+- **Numéro répondu**: Cette règle identique à la précédente mais pour les appels décrochés et dont la durée est supérieure à 15 sec. est désactivée. **Il n’y a aucune bonne raison de l’activer.**
+- **Heure d’arrêt**: Permet d’autoriser tous les appels reçus dans une certaine plage horaire. **Laissez désactivé**. Si activé, **règles de numéros** reste prioritaire pour continuer de bloquer les numéros correspondants.
+- **Urgence**: Après avoir composé un numéro d’urgence, tous les appels entrants sont autorisés pendant 2 heures. J’ai demandé au developpeur de pouvoir affiner cette règle afin que les **règles de numéros** s’appliquent même dans ce cas. Surveillez ce repo pour être tenu au courant et disposer de la mise à jour quand elle sera disponible.
+- **Applications récentes**: Désactivé. Permet d’autoriser tous les appels sauf si correspondent à **règles de numéros**, si une application spécifiée a été ouverte dans les 5 dernières minutes. Si vous l’activer, ça pourrait contribuer à utiliser un peu plus de batterie.
+- **Mode réunion**: Les applications que vous sélectionneriez ici servent de bloqueur absolu. C’est à dire que lorsqu’elles sont en avant plan (ou en cours d’utilisation pour de la communication), tous les appels sont bloqués. Android propose déjà les **modes** qui font sensiblement la même chose sauf le déclenchement automatique d’un mode selon le contexte.
+- **Type de blocage**: `Rejeter` est identique à appuyer sur le bouton *raccrocher* pendant que ça sonne et permet aux appels bloqués de tout de même atteindre le répondeur et de laisser un message. Ça me semble être un paramètre sain au cas où un appel rejeté serait légitime. Je recommande néanmoins fortement d’avoir une annonce de répondeur qui dévoile peu de détails personnels (le prénom au max) sinon aucun. L’idéal serait même qu’aucune IA puisse entendre votre annonce avec votre voix plus de 5 sec. Sinon passer le paramètre à `raccrocher` permet de répondre et raccrocher dans la seconde pour éviter l’atteinte du répondeur. D’expérience, bien qu’ils soient de toute façon bloqués, il me semble que je reçois moins d’appels de démarchage depuis qu’ils sont `rejetés`. J’imagine que le fait que leurs appels soient systèmatiquement rejetés avant même la première tonalité me met sur une liste noire.
+- **Notification**: Comment est affichée la notification de blocage. Laissez à `faible` pour des blocages silencieux. Sinon, ajustez pour tout de même entendre un son de notification lors du blocage.
+- **ID appelant**: Désactivé. Les applications téléphoniques modernes comme [Phone by Google](https://play.google.com/store/apps/details?id=com.google.android.dialer) sont généralement assez fiable pour afficher l’ID lors d’un appel si disponible.
+
+### Paramètres de l’expression régulière (règles de numéros)
+
+> [!IMPORTANT]
+> C’est ici que vous allez pouvoir bloquer ou autoriser des numéros ou des plages de numéros et donc des pays entiers.
+
+<img width="300" alt="Screenshot_20260528-044609" src="https://github.com/user-attachments/assets/7a7dec32-c45d-4f75-8327-85649cefe910" />
+
+Pour toutes les plages de numéros bloqués, j’ai défini une priorité de 11. La seule priorité plus élevée dans la config est 12 qui est utilisée pour toujours laisser passer les **contacts**. Cela signifie que les plages de numéros définis ici seront toujours bloquées.
+
+- **Maghreb**, **Asie du Sud**, **Afrique de l’Ouest**: À moins que vous ayez besoin d’être régulièrement en contact téléphonique avec ces pays, il n’y a aucune raison d’autoriser les appels de ces régions. [Pourquoi ?](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/wiki/Pourquoi-bloquer-certains-pays%E2%80%AF%3F)
+- **Démarchage**: Blocage de tous les numéros utilisant les préfixes précis pour le démarchage réservés par l’Arcep.
+- **OnOff**: C’est une application utilisée pour créer des numéros virtuels. Elle est rarement utilisée de façon bienveillante. On bloque donc tous les préfixes utilisés par cette application.
+
+Les autres paramètres de cette section concernent des options avancées pour les SMS. Inutile dans notre cas.
+
+### Requêtes instantanées
+
+<img width="300" alt="Screenshot_20260528-050352" src="https://github.com/user-attachments/assets/12ff1ef9-eb0c-4b37-a9cf-fc3ae1d10bb5" />
+
+
+C’est ici que sont définis les annuaires de spams. Quand un numéro a passé tous les filtres précédents, il est envoyé à ces annuaires. Dès qu’un annuaire retourne que ce numéro a été signalé comme spams par d’autres utilisateurs, il est ajouté à la base de données et bloqué.
+
+Les annuaires interrogés sont:
+- [CallFilter](https://callfilter.app/)
+- [Dois-je répondre ?](https://www.doisjerepondre.fr/)
+- [Tellows](https://www.tellows.fr/)
+
+### Autres options et sauvegardes
+
+Les autres options ne sont pas utilisées. La seule section intéressante sera celle où vous pouvez sauvegarder et restaurer votre configuration.
+
+<img width="300" alt="Screenshot_20260528-041544" src="https://github.com/user-attachments/assets/649a066d-963e-4e11-9d58-f43c45996f66" />
+
 
 ---
 
