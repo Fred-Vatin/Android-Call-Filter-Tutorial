@@ -231,6 +231,15 @@ Les autres options ne sont pas utilisées. La seule section intéressante sera c
 
 <img width="300" alt="Screenshot_20260528-041544" src="https://github.com/user-attachments/assets/649a066d-963e-4e11-9d58-f43c45996f66" />
 
+---
+
+Si vous avez réussi à appliquer ce tutoriel, faites-en profiter les autres au maximum. Installez cet anti-spam chez vos proches. Si vous avez des méthodes pour **iPhone**, je vous suggère de créer un tutoriel en vous basant sur celui-ci. Ensuite, écrivez un message dans l’espace de discution pour partagez le lien que j’indiquerai ici.
+
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/24006c39-2fae-464f-9cda-2dd5d8b17d3d" />
+
+
+Et n’oubliez pas que pour toutes questions ou suggestions, RDV dans la section [Discussions](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/discussions)
+
 
 ---
 
