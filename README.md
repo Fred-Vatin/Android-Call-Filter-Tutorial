@@ -254,7 +254,9 @@ Les autres options ne sont pas utilisées. La seule section intéressante sera c
 
 Vous pouvez tester un numéro et observer comment il est traité par la configuration en détail. En plus de vous aider à comprendre comment fonctionne le système de filtrage, cela vous permettra d’ajuter les filtres le cas échant.
 
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/0c9772cd-ca0c-493a-a1fd-51e74ed2fd30" /><img width="300" alt="image" src="https://github.com/user-attachments/assets/a4c8d013-7037-46fa-af42-5c28e69e5259" /><img width="300" alt="Screenshot_20260529-102943" src="https://github.com/user-attachments/assets/72bf40b3-0b3d-480c-ae8f-6f33d5e66333" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/0c9772cd-ca0c-493a-a1fd-51e74ed2fd30" /><img width="300" alt="image" src="https://github.com/user-attachments/assets/a4c8d013-7037-46fa-af42-5c28e69e5259" />
+
+<img width="300" alt="Screenshot_20260529-102943" src="https://github.com/user-attachments/assets/72bf40b3-0b3d-480c-ae8f-6f33d5e66333" />
 
 ---
 
