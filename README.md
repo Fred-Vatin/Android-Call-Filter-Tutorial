@@ -214,7 +214,7 @@ Voici la configuration :
 > [!IMPORTANT]
 > C’est ici que vous allez pouvoir bloquer ou autoriser des numéros ou des plages de numéros et donc des pays entiers.
 
-<img width="300" alt="Screenshot_20260528-044609" src="https://github.com/user-attachments/assets/7a7dec32-c45d-4f75-8327-85649cefe910" />
+<img width="300" alt="Screenshot_20260529-083609" src="https://github.com/user-attachments/assets/730bbf31-4c6b-4d69-b34d-02e369436fc9" />
 
 Pour toutes les plages de numéros bloqués, j’ai défini une priorité de 11. La seule priorité plus élevée dans la config est 12 qui est utilisée pour toujours laisser passer les **contacts**. Cela signifie que les plages de numéros définis ici seront toujours bloquées.
 
@@ -222,20 +222,22 @@ Pour toutes les plages de numéros bloqués, j’ai défini une priorité de 11.
    - Pour ne plus bloquer un pays, vous pouvez éditer la règle afin d’effacer son indicatif. Collez la règle dans Gemini et demandez-lui comment faire si vous n’êtes pas sûr.
    - Pour ne plus bloquer une région, supprimez la règle ou éditez en mettant la priorité à 0 **ET** en mettant le type à `autoriser`.
 - **Démarchage**: Blocage de tous les numéros utilisant les préfixes précis pour le démarchage réservés par l’Arcep.
+   - Il y a une règle équivalente pour l’Italie mais il semble que les escrocs italiens parviennent à contourner en louant des lignes fixes ou mobiles valides. Ce qui est illégale.
 - **OnOff**: C’est une application utilisée pour créer des numéros virtuels. Elle est rarement utilisée de façon bienveillante. On bloque donc tous les préfixes utilisés par cette application.
 
 Les autres paramètres de cette section concernent des options avancées pour les SMS. Inutile dans notre cas.
 
-### Requêtes instantanées
+### Requêtes instantanées (annuaires de SPAMS)
 
-<img width="300" alt="Screenshot_20260528-050352" src="https://github.com/user-attachments/assets/12ff1ef9-eb0c-4b37-a9cf-fc3ae1d10bb5" />
+<img width="300" alt="Screenshot_20260529-091141" src="https://github.com/user-attachments/assets/5194b401-c881-4ed5-9570-3eaa7fc69538" />
 
 C’est ici que sont définis les annuaires de spams. Quand un numéro a passé tous les filtres précédents, il est envoyé à ces annuaires pour vérification. Dès qu’un annuaire retourne que ce numéro a été signalé comme spams par d’autres utilisateurs, il est ajouté à la base de données et bloqué.
 
 Les annuaires interrogés sont:
 - [CallFilter](https://callfilter.app/)
 - [Dois-je répondre ?](https://www.doisjerepondre.fr/)
-- [Tellows](https://www.tellows.fr/)
+- [Chi sta chiamando?](https://www.chistachiamando.it/)
+- [Tellows.fr](https://www.tellows.fr/)
 
 ### Autres options et sauvegardes
 
