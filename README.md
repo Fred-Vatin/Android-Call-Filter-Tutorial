@@ -26,7 +26,7 @@ Les appels de démarchages et d’escroquerie (ils se confondent) se sont multip
    3. [Paramètres de l’expression régulière (règles de numéros)](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros)
    4. [Requête instantanées (annuaires de spams)](#requ%C3%AAtes-instantan%C3%A9es-annuaires-de-spams)
    5. [Autres options et sauvegardes](#autres-options-et-sauvegardes)
-7. [Tester un numéro]
+7. [Tester un numéro](#tester-un-num%C3%A9ro)
 8. [Partagez](#partagez)
 
 </details>
