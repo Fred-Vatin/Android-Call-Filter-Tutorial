@@ -119,15 +119,13 @@ De même que votre PC utilise des `.exe` pour installer un logiciel, votre smart
 
 L’application se nomme [SpamBlocker](https://github.com/aj3423/SpamBlocker) et j’ai contribué à créer ou mettre à jour les filtres pour la France.
 
-Pour la télécharger cliquez [ici](https://github.com/aj3423/SpamBlocker/releases/latest/download/app-release.apk) ou scannez ce QRCode avec l’appareil photo de votre smartphone ou l’application [Lens](https://play.google.com/store/apps/details?id=com.google.ar.lens):
+Pour la télécharger cliquez [ici](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/releases/latest/) ou scannez ce QRCode avec l’appareil photo de votre smartphone ou l’application [Lens](https://play.google.com/store/apps/details?id=com.google.ar.lens):
 
-<img width="100" alt="image" src="https://github.com/user-attachments/assets/1c3c5f16-d813-48be-ad30-724c5dabd336" />
+<img width="100" alt="image" src="https://github.com/user-attachments/assets/8b2a81f0-7cd7-489d-8bf4-6a39c98bd034" />
 
-Vous allez aussi avoir besoin de mon fichier de configuration. Téléchargez-le en cliquant [ici](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/releases/latest/download/SpamBlocker-settings.gz) ou scannez ce QRCode:
+Téléchargez bien les deux fichiers indiqués.
 
-<img width="100" alt="image" src="https://github.com/user-attachments/assets/69d864fa-0d42-44e2-8d7c-1dee7a0a1f52" />
-
-Dans votre smartphone, RDV dans vos fichiers téléchargés et cliquer sur `app-release.apk` pour l’installer. Une fois installé, lancez l’application **SpamBlocker**. Ça ressemble à ça.
+Dans votre smartphone, RDV dans vos fichiers téléchargés et cliquer sur `SpamBlocker-5.9.apk` pour l’installer. Une fois installé, lancez l’application **SpamBlocker**. Ça ressemble à ça.
 
 <img width="150" alt="Screenshot_20260526-232549 - Copy" src="https://github.com/user-attachments/assets/8683d845-9471-4381-84f6-9de80e438398" />
 
@@ -193,7 +191,7 @@ Personnellement, ça fait longtemps que je n’ai pas reçu de SMS frauduleux en
 
 *Certaines options pourraient valoir le coup d’être personnalisées mais ni moi ni d’autres ont eu de problèmes avec cette configuration.*
 
-<img width="300" alt="Screenshot_20260528-042040" src="https://github.com/user-attachments/assets/b1d62e37-cec8-42f1-b6b3-da7ed376ab03" />
+<img width="300" alt="Screenshot_20260529-080904" src="https://github.com/user-attachments/assets/9393cbe2-9622-4a3c-bb5e-eae8800ce991" />
 
 Voici la configuration :
 - **Contacts**: Tous les numéros faisant partie de vos contacts seront toujours autorisés. Il n’y a pas d’exception sauf à créer une [règle de blocage](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros) pour un numéro qui aurait une priorité plus élevée que 12.
@@ -204,7 +202,7 @@ Voici la configuration :
 - **Numéro composé**: Les numéros que vous avez composés les 7 derniers jours ne seront pas bloqués sauf s’ils appartienennt à [règle de numéros](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros).
 - **Numéro répondu**: Règle identique à la précédente mais pour les appels décrochés et dont la durée est supérieure à 15 sec. Désactivée. **Il n’y a aucune bonne raison de l’activer.**
 - **Heure d’arrêt**: Permet d’autoriser tous les appels reçus dans une certaine plage horaire. **Laissez désactivé**. Si activé, [règle de numéros](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros) reste prioritaire pour continuer de bloquer les numéros de démarchage.
-- **Urgence**: Après avoir composé un numéro d’urgence, tous les appels entrants sont autorisés pendant 2 heures. *Dans la prochaine version de l’app on pourra affiner cette règle afin que les [règle de numéros](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros) s’appliquent même dans ce cas. Surveillez ce repo pour être tenu au courant et disposer de la mise à jour quand elle sera disponible.*
+- **Urgence**: Après avoir composé un numéro d’urgence, \**tous* les appels entrants sont autorisés pendant 2 heures. \*[règle de numéros](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros) reste prioritaire pour continuer de bloquer les numéros de démarchage.
 - **Applications récentes**: Désactivé. Permet d’autoriser tous les appels sauf si correspondent à [règle de numéros](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros), si une application spécifiée a été ouverte dans les 5 dernières minutes. Si vous l’activer, ça pourrait contribuer à utiliser un peu plus de batterie.
 - **Mode réunion**: Les applications que vous sélectionneriez ici servent de bloqueur absolu. C’est à dire que lorsqu’elles sont en avant plan (ou en cours d’utilisation pour de la communication), tous les appels sont bloqués. Android propose déjà les **modes** qui font sensiblement la même chose sauf le déclenchement automatique d’un mode selon le contexte.
 - **Type de blocage**: `Rejeter` est identique à appuyer sur le bouton *raccrocher* pendant que ça sonne et permet aux appels bloqués de tout de même atteindre le répondeur et de laisser un message. Ça me semble être un paramètre sain au cas où un appel rejeté serait légitime. Je recommande néanmoins fortement d’avoir une annonce de répondeur qui dévoile peu de détails personnels (le prénom au max) sinon aucun. L’idéal serait même qu’aucune IA puisse entendre votre annonce avec votre voix plus de 5 sec. Sinon passer le paramètre à `raccrocher` permet de répondre et raccrocher dans la seconde pour éviter l’atteinte du répondeur. D’expérience, bien qu’ils soient de toute façon bloqués, il me semble que je reçois moins d’appels de démarchage depuis qu’ils sont `rejetés`. J’imagine que le fait que leurs appels soient systèmatiquement rejetés avant même la première tonalité me met sur une liste noire.
