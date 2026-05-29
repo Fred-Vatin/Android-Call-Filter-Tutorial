@@ -4,6 +4,9 @@ Les appels de démarchages et d’escroquerie (ils se confondent) se sont multip
 
 [![BUY ME A COFFEE](https://img.shields.io/badge/BUY%20ME%20A%20COFFEE-ffffff?logo=buymeacoffee&style=for-the-badge&color=710067&logoColor=ffe071)](https://github.com/sponsors/Fred-Vatin)
 
+> [!NOTE]
+> 🇮🇹 Amici italiani, per favore leggete questo [articolo](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/wiki/Call-center-e-telemarketing-selvaggio:-come-difendersi-(davvero)-nel-2026).
+
 <details>
 <summary><b>Sommaire</b></summary>
 
@@ -222,7 +225,7 @@ Pour toutes les plages de numéros bloqués, j’ai défini une priorité de 11.
    - Pour ne plus bloquer un pays, vous pouvez éditer la règle afin d’effacer son indicatif. Collez la règle dans Gemini et demandez-lui comment faire si vous n’êtes pas sûr.
    - Pour ne plus bloquer une région, supprimez la règle ou éditez en mettant la priorité à 0 **ET** en mettant le type à `autoriser`.
 - **Démarchage**: Blocage de tous les numéros utilisant les préfixes précis pour le démarchage réservés par l’Arcep.
-   - Il y a une règle équivalente pour l’Italie mais il semble que les escrocs italiens parviennent à contourner en louant des lignes fixes ou mobiles valides. Ce qui est illégale.
+   - 🇮🇹 Esiste una regola equivalente per l'Italia, ma sembra che i truffatori italiani riescano ad aggirarla noleggiando linee fisse o mobili valide. Il che è illegale.
 - **OnOff**: C’est une application utilisée pour créer des numéros virtuels. Elle est rarement utilisée de façon bienveillante. On bloque donc tous les préfixes utilisés par cette application.
 
 Les autres paramètres de cette section concernent des options avancées pour les SMS. Inutile dans notre cas.
