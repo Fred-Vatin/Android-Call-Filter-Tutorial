@@ -26,7 +26,8 @@ Les appels de démarchages et d’escroquerie (ils se confondent) se sont multip
    3. [Paramètres de l’expression régulière (règles de numéros)](#param%C3%A8tres-de-lexpression-r%C3%A9guli%C3%A8re-r%C3%A8gles-de-num%C3%A9ros)
    4. [Requête instantanées (annuaires de spams)](#requ%C3%AAtes-instantan%C3%A9es-annuaires-de-spams)
    5. [Autres options et sauvegardes](#autres-options-et-sauvegardes)
-7. [Partagez](#partagez)
+7. [Tester un numéro]
+8. [Partagez](#partagez)
 
 </details>
 
@@ -247,6 +248,13 @@ Les annuaires interrogés sont:
 Les autres options ne sont pas utilisées. La seule section intéressante sera celle où vous pouvez sauvegarder et restaurer votre configuration.
 
 <img width="300" alt="Screenshot_20260528-041544" src="https://github.com/user-attachments/assets/649a066d-963e-4e11-9d58-f43c45996f66" />
+
+
+## Tester un numéro
+
+Vous pouvez tester un numéro et observer comment il est traité par la configuration en détail. En plus de vous aider à comprendre comment fonctionne le système de filtrage, cela vous permettra d’ajuter les filtres le cas échant.
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/0c9772cd-ca0c-493a-a1fd-51e74ed2fd30" /><img width="300" alt="image" src="https://github.com/user-attachments/assets/a4c8d013-7037-46fa-af42-5c28e69e5259" /><img width="300" alt="Screenshot_20260529-102943" src="https://github.com/user-attachments/assets/72bf40b3-0b3d-480c-ae8f-6f33d5e66333" />
 
 ---
 
