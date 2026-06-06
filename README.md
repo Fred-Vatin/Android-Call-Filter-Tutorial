@@ -123,13 +123,17 @@ De même que votre PC utilise des `.exe` pour installer un logiciel, votre smart
 
 L’application se nomme [SpamBlocker](https://github.com/aj3423/SpamBlocker) et j’ai contribué à créer ou mettre à jour les filtres pour la France.
 
-Pour la télécharger cliquez [ici](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/releases/latest/) ou scannez ce QRCode avec l’appareil photo de votre smartphone ou l’application [Lens](https://play.google.com/store/apps/details?id=com.google.ar.lens):
+Pour la télécharger cliquez [ici](https://github.com/aj3423/SpamBlocker/releases/latest/download/app-release.apk) ou scannez ce QRCode avec l’appareil photo de votre smartphone ou l’application [Lens](https://play.google.com/store/apps/details?id=com.google.ar.lens):
 
-<img width="100" alt="image" src="https://github.com/user-attachments/assets/8b2a81f0-7cd7-489d-8bf4-6a39c98bd034" />
+<img width="100" alt="image" src="https://github.com/user-attachments/assets/6829768a-de69-423d-9f32-f8b928d685f0" />
+
+Ensuite télécharger la configuration [ici](https://github.com/Fred-Vatin/Android-Call-Filter-Tutorial/releases/latest/download/SpamBlocker-settings.gz).
+
+<img width="100" alt="image" src="https://github.com/user-attachments/assets/74a7b3f7-86f3-4b3a-b0c3-9df20be51ec8" />
 
 Téléchargez bien les deux fichiers indiqués.
 
-Dans votre smartphone, RDV dans vos fichiers téléchargés et cliquer sur `SpamBlocker-5.9.apk` pour l’installer. Une fois installé, lancez l’application **SpamBlocker**. Ça ressemble à ça.
+Dans votre smartphone, RDV dans vos fichiers téléchargés et cliquer sur `app-release.apk` pour l’installer. Une fois installé, lancez l’application **SpamBlocker**. Ça ressemble à ça.
 
 <img width="150" alt="Screenshot_20260526-232549 - Copy" src="https://github.com/user-attachments/assets/8683d845-9471-4381-84f6-9de80e438398" />
 
